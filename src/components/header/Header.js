@@ -26,11 +26,11 @@ class Header extends Component {
         <div>
           <header className="header">
             <NavLink to={link} tag={Link} className="logo">
-              <span style={{ color: theme.text }}> &lt;</span>
+              {/* <span style={{ color: theme.text }}> &lt;</span> */}
               <span className="logo-name" style={{ color: theme.text }}>
                 {greeting.logo_name}
               </span>
-              <span style={{ color: theme.text }}>/&gt;</span>
+              {/* <span style={{ color: theme.text }}>/&gt;</span> */}
             </NavLink>
             <input className="menu-btn" type="checkbox" id="menu-btn" />
             <label className="menu-icon" htmlFor="menu-btn">
@@ -46,7 +46,7 @@ class Header extends Component {
                   onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
                   onMouseOut={(event) => onMouseOut(event)}
                 >
-                  Home
+                  Αρχική
                 </NavLink>
               </li>
               <li>
@@ -58,7 +58,7 @@ class Header extends Component {
                   onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
                   onMouseOut={(event) => onMouseOut(event)}
                 >
-                  Education
+                  Εκπαίδευση
                 </NavLink>
               </li>
               <li>
@@ -70,10 +70,10 @@ class Header extends Component {
                   onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
                   onMouseOut={(event) => onMouseOut(event)}
                 >
-                  Experience
+                  Εμπειρία
                 </NavLink>
               </li>
-              <li>
+              {/* <li>
                 <NavLink
                   to="/projects"
                   tag={Link}
@@ -82,7 +82,7 @@ class Header extends Component {
                   onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
                   onMouseOut={(event) => onMouseOut(event)}
                 >
-                  Projects
+                  Συλλογή
                 </NavLink>
               </li>
               <li>
@@ -96,6 +96,18 @@ class Header extends Component {
                 >
                   Open Source
                 </NavLink>
+              </li> */}
+              <li>
+                <NavLink
+                  to="/gallery"
+                  tag={Link}
+                  activeStyle={{ fontWeight: "bold" }}
+                  style={{ color: theme.text }}
+                  onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
+                  onMouseOut={(event) => onMouseOut(event)}
+                >
+                  Συλλογή
+                </NavLink>
               </li>
               <li>
                 <NavLink
@@ -106,7 +118,7 @@ class Header extends Component {
                   onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
                   onMouseOut={(event) => onMouseOut(event)}
                 >
-                  Contact Me
+                  Επικοινωνία
                 </NavLink>
               </li>
             </ul>

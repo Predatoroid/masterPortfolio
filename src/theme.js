@@ -131,4 +131,4 @@ export const frozenDreamsTheme = {
   headerColor: "#0E6BA877",
 };
 
-export const chosenTheme = frozenDreamsTheme;
+export const chosenTheme = blackTheme;
