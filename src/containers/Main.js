@@ -7,6 +7,7 @@ import Experience from "../pages/experience/Experience";
 import Opensource from "../pages/opensource/Opensource";
 import Contact from "../pages/contact/ContactComponent";
 import Projects from "../pages/projects/Projects";
+import GalleryComponent from "../pages/gallery/Gallery";
 import { settings } from "../portfolio.js";
 import Error404 from "../pages/errors/error404/Error";
 
@@ -67,6 +68,12 @@ export default class Main extends Component {
                   <Projects {...props} theme={this.props.theme} />
                 )}
               /> */}
+              <Route
+                path="/gallery"
+                render={(props) => (
+                  <GalleryComponent {...props} theme={this.props.theme} />
+                )}
+              />
               <Route
                 path="*"
                 render={(props) => (
@@ -131,6 +138,12 @@ export default class Main extends Component {
                   <Projects {...props} theme={this.props.theme} />
                 )}
               /> */}
+              <Route
+                path="/gallery"
+                render={(props) => (
+                  <GalleryComponent {...props} theme={this.props.theme} />
+                )}
+              />
             </Switch>
           </HashRouter>
         </div>
