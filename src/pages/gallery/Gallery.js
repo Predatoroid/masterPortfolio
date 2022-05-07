@@ -13,49 +13,159 @@ function GalleryComponent(props) {
 
   const photos = [
     {
-      src: "https://source.unsplash.com/2ShvY8Lf6l0/800x599",
+      src: require(`../../assets/images/01.jpg`),
       width: 4,
       height: 3,
     },
     {
-      src: "https://source.unsplash.com/Dm-qxdynoEc/800x799",
+      src: require(`../../assets/images/02.jpg`),
+      width: 4,
+      height: 3,
+    },
+    {
+      src: require(`../../assets/images/03.jpg`),
+      width: 3,
+      height: 4,
+    },
+    {
+      src: require(`../../assets/images/04.jpg`),
+      width: 3,
+      height: 4,
+    },
+    {
+      src: require(`../../assets/images/05.jpg`),
+      width: 3,
+      height: 4,
+    },
+    {
+      src: require(`../../assets/images/06.jpg`),
+      width: 4,
+      height: 3,
+    },
+    {
+      src: require(`../../assets/images/07.jpg`),
+      width: 3,
+      height: 4,
+    },
+    {
+      src: require(`../../assets/images/7.jpg`),
+      width: 3,
+      height: 4,
+    },
+    {
+      src: require(`../../assets/images/08.jpg`),
+      width: 4,
+      height: 3,
+    },
+    {
+      src: require(`../../assets/images/09.jpg`),
       width: 1,
       height: 1,
     },
     {
-      src: "https://source.unsplash.com/qDkso9nvCg0/600x799",
+      src: require(`../../assets/images/11.jpg`),
       width: 3,
       height: 4,
     },
     {
-      src: "https://source.unsplash.com/iecJiKe_RNg/600x799",
-      width: 3,
-      height: 4,
-    },
-    {
-      src: "https://source.unsplash.com/epcsn8Ed8kY/600x799",
-      width: 3,
-      height: 4,
-    },
-    {
-      src: "https://source.unsplash.com/NQSWvyVRIJk/800x599",
+      src: require(`../../assets/images/12.jpg`),
       width: 4,
       height: 3,
     },
     {
-      src: "https://source.unsplash.com/zh7GEuORbUw/600x799",
+      src: require(`../../assets/images/13.jpg`),
       width: 3,
       height: 4,
     },
     {
-      src: "https://source.unsplash.com/PpOHJezOalU/800x599",
+      src: require(`../../assets/images/14.jpg`),
+      width: 3,
+      height: 4,
+    },
+    {
+      src: require(`../../assets/images/16.jpg`),
+      width: 3,
+      height: 4,
+    },
+    {
+      src: require(`../../assets/images/17.jpg`),
+      width: 3,
+      height: 4,
+    },
+    {
+      src: require(`../../assets/images/18.jpg`),
+      width: 3,
+      height: 4,
+    },
+    {
+      src: require(`../../assets/images/19.jpg`),
+      width: 3,
+      height: 4,
+    },
+    {
+      src: require(`../../assets/images/21.jpg`),
       width: 4,
       height: 3,
     },
     {
-      src: "https://source.unsplash.com/I1ASdgphUH4/800x599",
+      src: require(`../../assets/images/22.jpg`),
+      width: 3,
+      height: 4,
+    },
+    {
+      src: require(`../../assets/images/23.jpg`),
+      width: 1,
+      height: 1,
+    },
+    {
+      src: require(`../../assets/images/24.jpg`),
+      width: 3,
+      height: 4,
+    },
+    {
+      src: require(`../../assets/images/28.jpg`),
+      width: 3,
+      height: 4,
+    },
+    {
+      src: require(`../../assets/images/30.jpg`),
+      width: 3,
+      height: 4,
+    },
+    {
+      src: require(`../../assets/images/34.jpg`),
+      width: 3,
+      height: 4,
+    },
+    {
+      src: require(`../../assets/images/35.jpg`),
       width: 4,
       height: 3,
+    },
+    {
+      src: require(`../../assets/images/36.jpg`),
+      width: 4,
+      height: 3,
+    },
+    {
+      src: require(`../../assets/images/37.jpg`),
+      width: 3,
+      height: 4,
+    },
+    {
+      src: require(`../../assets/images/38.jpg`),
+      width: 3,
+      height: 4,
+    },
+    {
+      src: require(`../../assets/images/39.jpg`),
+      width: 3,
+      height: 4,
+    },
+    {
+      src: require(`../../assets/images/40.jpg`),
+      width: 3,
+      height: 4,
     },
   ];
 
