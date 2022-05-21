@@ -7,6 +7,8 @@ class FeelingProud extends Component {
       <img
         src={require(`../../assets/images/elpidoforos_profile_transparent.png`)}
         alt="elpidoforos_dimitrakopoulos"
+        width="400px"
+        class="center"
       />
     );
   }

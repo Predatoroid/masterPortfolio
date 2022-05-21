@@ -29,7 +29,16 @@ class Contact extends Component {
                 <img
                   src={require(`../../assets/images/${ContactData["profile_image_path"]}`)}
                   alt=""
+                  width="65%"
                 />
+                <h3
+                  className="quote-heading-text"
+                  style={{ color: theme.text }}
+                >
+                  {
+                    "“A recipe has no soul, you as the cook must bring soul to the recipe„"
+                  }
+                </h3>
               </div>
               <div className="contact-heading-text-div">
                 <h1

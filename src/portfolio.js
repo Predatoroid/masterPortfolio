@@ -53,7 +53,7 @@ const socialMediaLinks = [
   },
   {
     name: "Facebook",
-    link: "https://www.facebook.com/elpi.arxontas/",
+    link: "https://www.facebook.com/el.dimitrakopoulos/",
     fontAwesomeIcon: "fa-facebook-f", // Reference https://fontawesome.com/icons/facebook-f?style=brands
     backgroundColor: "#1877F2", // Reference https://simpleicons.org/?q=facebook
   },
@@ -68,234 +68,35 @@ const socialMediaLinks = [
 const skills = {
   data: [
     {
-      title: "Data Science & AI",
-      fileName: "DataScienceImg",
+      title: "Εκπαίδευση",
+      fileName: "CookingSchoolImg",
       skills: [
-        "⚡ Developing highly scalable production ready models for various deeplearning and statistical use cases",
-        "⚡ Experience of working with Computer Vision and NLP projects",
-        "⚡ Complex quantitative modelling for dynamic forecasting and time series analysis",
+        "⚡ Ο Ελπιδοφόρος Δημητρακόπουλος γεννήθηκε στην Αθήνα το 1997. Αφού αποφοίτησε από το Γενικό Λύκειο, παράλληλα με τις σπουδές του στη Φιλολογία αποφάσισε να ασχοληθεί με το χώρο της εστίασης.",
+        "⚡ Η συνεχής επιθυμία του για προσφορά, ευχαρίστηση και αγάπη, τόσο στους δικούς του ανθρώπους, όσο και στο ευρύ κοινό άρχισε να εκφράζεται πλέον μέσω της μαγειρικής.",
+        "⚡ Ξεκίνησε τις σπουδές του στον εκπαιδευτικό όμιλο Le Monde, από όπου πήρε τις βάσεις και τα απαραίτητα εφόδια για την αρχή της καριέρας του στη γαστρονομία.",
+        "⚡ Με γνώμονα πάντα την εξέλιξη και τη δίψα του για την απόκτηση γνώσεων συνεχίζει τις σπουδές του στο πρόγραμμα “Professional Culinary Arts” του University of Derby.",
       ],
-      softwareSkills: [
-        {
-          skillName: "Tensorflow",
-          fontAwesomeClassname: "logos-tensorflow",
-          style: {
-            backgroundColor: "transparent",
-          },
-        },
-        {
-          skillName: "Keras",
-          fontAwesomeClassname: "simple-icons:keras",
-          style: {
-            backgroundColor: "white",
-            color: "#D00000",
-          },
-        },
-        {
-          skillName: "PyTorch",
-          fontAwesomeClassname: "logos-pytorch",
-          style: {
-            backgroundColor: "transparent",
-          },
-        },
-        {
-          skillName: "Python",
-          fontAwesomeClassname: "ion-logo-python",
-          style: {
-            backgroundColor: "transparent",
-            color: "#3776AB",
-          },
-        },
-      ],
+      softwareSkills: [],
     },
     {
-      title: "Full Stack Development",
-      fileName: "FullStackImg",
+      title: "Εργασιακή Εμπειρία",
+      fileName: "ChefWorkingImg",
       skills: [
-        "⚡ Building resposive website front end using React-Redux",
-        "⚡ Developing mobile applications using Flutter, React Native and solo android apps using Kotlin",
-        "⚡ Creating application backend in Node, Express & Flask",
+        "⚡ Από την αρχή της εργασιακής του πορείας εργάστηκε σε ξενοδοχεία 5* γνωστών ξενοδοχειακών ομίλων και υψηλού επιπέδου εστιατόρια.",
+        "⚡ Έτσι αποκόμισε πολλές γνώσεις για το αντικείμενο και συναναστράφηκε με ανθρώπους με τεράστια εμπειρία στο κομμάτι της φιλοξενίας.",
+        "⚡ Οι φιλοδοξίες του ειναι υψηλές και επιδιώκει τη διαρκή εξέλιξή του, τόσο σε προσωπικό αλλά και επαγγελματικό επίπεδο.",
+        "⚡ Θεωρεί τον εαυτό του τυχερό που ασχολείται με τον τουρισμό και την εστίαση, καθώς η μαγειρική φαίνεται να είναι το μεγάλο του πάθος.",
       ],
-      softwareSkills: [
-        {
-          skillName: "HTML5",
-          fontAwesomeClassname: "simple-icons:html5",
-          style: {
-            color: "#E34F26",
-          },
-        },
-        {
-          skillName: "CSS3",
-          fontAwesomeClassname: "fa-css3",
-          style: {
-            color: "#1572B6",
-          },
-        },
-        {
-          skillName: "Sass",
-          fontAwesomeClassname: "simple-icons:sass",
-          style: {
-            color: "#CC6699",
-          },
-        },
-        {
-          skillName: "JavaScript",
-          fontAwesomeClassname: "simple-icons:javascript",
-          style: {
-            backgroundColor: "#000000",
-            color: "#F7DF1E",
-          },
-        },
-        {
-          skillName: "ReactJS",
-          fontAwesomeClassname: "simple-icons:react",
-          style: {
-            color: "#61DAFB",
-          },
-        },
-        {
-          skillName: "NodeJS",
-          fontAwesomeClassname: "simple-icons:node-dot-js",
-          style: {
-            color: "#339933",
-          },
-        },
-        {
-          skillName: "NPM",
-          fontAwesomeClassname: "simple-icons:npm",
-          style: {
-            color: "#CB3837",
-          },
-        },
-        {
-          skillName: "Yarn",
-          fontAwesomeClassname: "simple-icons:yarn",
-          style: {
-            color: "#2C8EBB",
-          },
-        },
-        {
-          skillName: "Gatsby",
-          fontAwesomeClassname: "simple-icons:gatsby",
-          style: {
-            color: "#663399",
-          },
-        },
-        {
-          skillName: "Flutter",
-          fontAwesomeClassname: "simple-icons:flutter",
-          style: {
-            color: "#02569B",
-          },
-        },
-      ],
+      softwareSkills: [],
     },
     {
-      title: "Cloud Infra-Architecture",
-      fileName: "CloudInfraImg",
+      title: "Λοιπές δραστηριότητες",
+      fileName: "HouseAdministrationImg",
       skills: [
-        "⚡ Experience working on multiple cloud platforms",
-        "⚡ Hosting and maintaining websites on virtual machine instances along with integration of databases",
-        "⚡ Deploying deep learning models on cloud to use on mobile devices",
-        "⚡ Setting up streaming jobs from DB to Server or vice-versa on GCP and AWS",
+        "⚡ Τα τελευταία χρόνια είναι μέρος ενός νέου project στην εταιρεία “Ubilus”, στην οποία διαχειρίζεται ακίνητα βραχυχρόνιας μίσθωσης.",
+        "⚡ Αυτό αποτελεί μια δραστηριότητα εκτός κουζίνας, η οποία όμως σχετίζεται άρρηκτα με την επιθυμία του για δραστηριοποίησή του σε πολλούς τομείς του τουριστικού κλάδου.",
       ],
-      softwareSkills: [
-        {
-          skillName: "GCP",
-          fontAwesomeClassname: "simple-icons:googlecloud",
-          style: {
-            color: "#4285F4",
-          },
-        },
-        {
-          skillName: "AWS",
-          fontAwesomeClassname: "simple-icons:amazonaws",
-          style: {
-            color: "#FF9900",
-          },
-        },
-        {
-          skillName: "Azure",
-          fontAwesomeClassname: "simple-icons:microsoftazure",
-          style: {
-            color: "#0089D6",
-          },
-        },
-        {
-          skillName: "Firebase",
-          fontAwesomeClassname: "simple-icons:firebase",
-          style: {
-            color: "#FFCA28",
-          },
-        },
-        {
-          skillName: "PostgreSQL",
-          fontAwesomeClassname: "simple-icons:postgresql",
-          style: {
-            color: "#336791",
-          },
-        },
-        {
-          skillName: "MongoDB",
-          fontAwesomeClassname: "simple-icons:mongodb",
-          style: {
-            color: "#47A248",
-          },
-        },
-        {
-          skillName: "Docker",
-          fontAwesomeClassname: "simple-icons:docker",
-          style: {
-            color: "#1488C6",
-          },
-        },
-        {
-          skillName: "Kubernetes",
-          fontAwesomeClassname: "simple-icons:kubernetes",
-          style: {
-            color: "#326CE5",
-          },
-        },
-      ],
-    },
-    {
-      title: "UI/UX Design",
-      fileName: "DesignImg",
-      skills: [
-        "⚡ Designing highly attractive user interface for mobile and web applications",
-        "⚡ Customizing logo designs and building logos from scratch",
-        "⚡ Creating the flow of application functionalities to optimize user experience",
-      ],
-      softwareSkills: [
-        {
-          skillName: "Adobe XD",
-          fontAwesomeClassname: "simple-icons:adobexd",
-          style: {
-            color: "#FF2BC2",
-          },
-        },
-        {
-          skillName: "Figma",
-          fontAwesomeClassname: "simple-icons:figma",
-          style: {
-            color: "#F24E1E",
-          },
-        },
-        {
-          skillName: "Adobe Illustrator",
-          fontAwesomeClassname: "simple-icons:adobeillustrator",
-          style: {
-            color: "#FF7C00",
-          },
-        },
-        {
-          skillName: "Inkscape",
-          fontAwesomeClassname: "simple-icons:inkscape",
-          style: {
-            color: "#000000",
-          },
-        },
-      ],
+      softwareSkills: [],
     },
   ],
 };
@@ -355,6 +156,7 @@ const degrees = {
       alt_name: "University of Derby",
       duration: "01/2022 - Σήμερα",
       descriptions: [
+        "⚡ Εμβάθυνση στο HR και F&B management, στο self reflection και στη σωστή λειτουργία τουριστικών επιχειρήσεων",
         "⚡ Πτυχιακή: “Διεύρυνση της καταναλωτικής τάσης του μελομακάρονου με επανασχεδιασμό σε «μελοmacaron» ”",
       ],
       website_link: "https://www.derby.ac.uk/",
@@ -368,7 +170,7 @@ const degrees = {
       duration: "09/2018 - 06/2020",
       descriptions: [
         "⚡ Εργαστηριακά μαθήματα στην τέχνη της μαγειρικής και της ζαχαροπλαστικής",
-        "⚡ Θεωρητικά μαθηματα στην εστιατορική, το f&b management, στις αρχές οικονομικής θεωρίας και κοστολόγιο, στην υγιεινή και το HACCP",
+        "⚡ Θεωρητικά μαθήματα στην εστιατορική, το f&b management, στις αρχές οικονομικής θεωρίας και κοστολόγιο, στην υγιεινή και το HACCP",
       ],
       website_link: "https://www.lemonde.edu.gr/en/",
     },
@@ -513,7 +315,7 @@ const experience = {
   title: "Εμπειρία",
   subtitle: "Εργασία, Σεμινάρια, Εθελοντισμός",
   description:
-    "Η εργασιακή μου εμπειρία στον χώρο της εστίασης και του τουρισμού ξεκίνησε από μικρές επιχειρήσεις, οι οποίες με έκαναν να θέλω να ασχοληθώ με αυτόν τον κλάδο. Στη συνέχεια, επενδύοντας πάντα στη γνώση και στην εξέλιξη κατάφερα να εργαστώ σε δύο μεγάλες ξενοδοχειακές μονάδες των ομίλων της “Grecotel” και της “Four Seasons”. Αυτή τη στιγμή βρίσκομαι στο εστιατόριο “OVIO” ως “Chef de partie” της κρύας κουζίνας, κατακτώντας πρόσφατα τον τίτλο του καλύτερου Ιταλικού εστιατορίου στα «Tasty Awards 2022». Παράλληλα εργάζομαι στην οικογενειακή επιχείρηση “Ubilus” ως διαχειριστής βραχυχρόνιας μίσθωσης ακινήτων στο project “GoForBnB”.",
+    "Η εργασιακή μου εμπειρία στον χώρο της εστίασης και του τουρισμού ξεκίνησε από μικρές επιχειρήσεις, οι οποίες με έκαναν να θέλω να ασχοληθώ με αυτόν τον κλάδο. Στη συνέχεια, επενδύοντας πάντα στη γνώση και στην εξέλιξη κατάφερα να εργαστώ σε δύο μεγάλες ξενοδοχειακές μονάδες των ομίλων της “Grecotel” και της “Four Seasons”. Αυτή τη στιγμή βρίσκομαι στο εστιατόριο “OVIO” ως “Chef de partie” της κρύας κουζίνας, κατακτώντας πρόσφατα τον τίτλο του καλύτερου Ιταλικού εστιατορίου στα «Tasty Awards 2022». Παράλληλα εργάζομαι στην επιχείρηση “Ubilus” ως διαχειριστής βραχυχρόνιας μίσθωσης ακινήτων στο project “GoForBnB”.",
   header_image_path: "experience.svg",
   sections: [
     {
@@ -581,7 +383,7 @@ const experience = {
           duration: "10/2020 - Σήμερα",
           location: "Αθήνα, Ελλάδα",
           description:
-            "• Διαχειριστής βραχυχρόνιας μίσθωσης ακινήτων\n• Διαχείριση πληρωμών και κοστολογίου\n• Επικοινωνία με τους κατόχους των ακινήτων και με τους επισκέπτες\n• Φωτογράφιση, προώθηση και ένταξη των ακινήτων στις αντίστοιχες πλατφμόρμες\n• Δημιουργία ταξιδιωτικού οδηγού και πληροφοριών για τα ακίνητα",
+            "• Διαχειριστής βραχυχρόνιας μίσθωσης ακινήτων\n• Διαχείριση κρατήσεων και πληρωμών\n• Επικοινωνία με τους κατόχους των ακινήτων και με τους επισκέπτες\n• Φωτογράφιση, προώθηση και ένταξη των ακινήτων στις αντίστοιχες πλατφμόρμες\n• Δημιουργία ταξιδιωτικού οδηγού και πληροφοριών για τα ακίνητα",
           color: "#0879bf",
         },
       ],
@@ -665,8 +467,8 @@ const galleryHeader = {
 // Contact Page
 const contactPageData = {
   contactSection: {
-    title: "Contact Me",
-    profile_image_path: "animated_ashutosh.png",
+    title: "Επικοινωνήστε μαζί μου",
+    profile_image_path: "elpidoforos_contact_transparent.png",
     description:
       "Μπορείτε να επικοινωνήσετε μαζί μου στα παρακάτω στοιχεία καθώς και σχεδόν σε όλα τα social media",
     image_description: "Πάντα διαθέσιμος για νέες και δημιουργικές συνεργασίες",

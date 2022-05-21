@@ -55,12 +55,42 @@
   height: auto;
 }
 
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 65%;
+}
+
+.quote-heading-text {
+  font-size: 36px;
+  font-weight: 400;
+  font-family: "Google Sans Medium";
+  line-height: 1.1;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.quote-text {
+  font-size: 20px;
+  font-family: "Google Sans Medium";
+  line-height: 1.1;
+  text-align: center;
+}
+
 /* Media Query */
 @media (max-width: 1380px) {
   .greeting-text {
     font-size: 50px;
   }
   .greeting-text-p {
+    font-size: 20px;
+  }
+  .quote-heading-text {
+    font-size: 30px;
+    margin-top: 60px;
+  }
+  .quote-text {
     font-size: 20px;
   }
 }
@@ -91,5 +121,13 @@
     width: 100%;
     display: flex;
     justify-content: center;
+  }
+
+  .quote-heading-text {
+    font-size: 25px;
+    margin-top: 0px;
+  }
+  .quote-text {
+    font-size: 15px;
   }
 }

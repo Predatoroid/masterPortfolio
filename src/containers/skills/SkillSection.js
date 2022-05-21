@@ -7,6 +7,9 @@ import DataScienceImg from "./DataScienceImg";
 import FullStackImg from "./FullStackImg";
 import CloudInfraImg from "./CloudInfraImg";
 import DesignImg from "./DesignImg";
+import CookingSchoolImg from "./CookingSchoolImg";
+import ChefWorkingImg from "./ChefWorkingImg";
+import HouseAdministrationImg from "./HouseAdministrationImg";
 
 function GetSkillSvg(props) {
   if (props.fileName === "DataScienceImg")
@@ -15,6 +18,12 @@ function GetSkillSvg(props) {
     return <FullStackImg theme={props.theme} />;
   else if (props.fileName === "CloudInfraImg")
     return <CloudInfraImg theme={props.theme} />;
+  else if (props.fileName === "CookingSchoolImg")
+    return <CookingSchoolImg theme={props.theme} />;
+  else if (props.fileName === "ChefWorkingImg")
+    return <ChefWorkingImg theme={props.theme} />;
+  else if (props.fileName === "HouseAdministrationImg")
+    return <HouseAdministrationImg theme={props.theme} />;
   return <DesignImg theme={props.theme} />;
 }
 
