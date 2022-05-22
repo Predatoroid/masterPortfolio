@@ -34,20 +34,20 @@
   margin-top: 80px;
   font-size: 70px;
   line-height: 1.1;
-  font-family: "Google Sans Bold";
+  font-family: "Segoe UI Bold";
 }
 
 .greeting-nickname {
   font-size: 30px;
   line-height: 0px;
-  font-family: "Google Sans Bold Italic";
+  font-family: "Segoe UI Bold Italic";
 }
 
 .greeting-text-p {
   font-size: 40px;
   line-height: 40px;
   margin-right: 40px;
-  font-family: "Google Sans Medium";
+  font-family: "Segoe UI SemiBold";
 }
 
 .greeting-image-div > * {
@@ -65,7 +65,7 @@
 .quote-heading-text {
   font-size: 36px;
   font-weight: 400;
-  font-family: "Google Sans Medium";
+  font-family: "Segoe UI SemiBold";
   line-height: 1.1;
   text-align: center;
   margin-top: 60px;
@@ -73,7 +73,7 @@
 
 .quote-text {
   font-size: 20px;
-  font-family: "Google Sans Medium";
+  font-family: "Segoe UI SemiBold";
   line-height: 1.1;
   text-align: center;
 }
