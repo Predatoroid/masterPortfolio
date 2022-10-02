@@ -127,6 +127,15 @@
   margin-top: 0;
 }
 
+.quote-heading-text {
+  font-size: 28px;
+  font-weight: 400;
+  font-family: "Google Sans Medium";
+  line-height: 1.1;
+  text-align: center;
+  margin-top: 60px;
+}
+
 @media (max-width: 1380px) {
   .contact-heading-text {
     font-size: 50px;
@@ -136,6 +145,11 @@
   .blog-heading-text {
     font-size: 50px;
     margin-top: 40px;
+  }
+
+  .quote-heading-text {
+    font-size: 24px;
+    margin-top: 60px;
   }
 }
 
@@ -190,5 +204,10 @@
     margin-right: 0px;
     line-height: normal;
     text-align: center;
+  }
+
+  .quote-heading-text {
+    font-size: 16px;
+    margin-top: 0px;
   }
 }

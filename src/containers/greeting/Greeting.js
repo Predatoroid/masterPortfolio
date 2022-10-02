@@ -38,6 +38,12 @@ export default function Greeting(props) {
             <FeelingProud theme={theme} />
           </div>
         </div>
+        <h3 className="quote-heading-text" style={{ color: theme.text }}>
+          {"“A journey of a thousand miles must begin with a single step„"}
+        </h3>
+        <p className="quote-text" style={{ color: theme.text }}>
+          {"-Lao Tzu"}
+        </p>
       </div>
     </Fade>
   );
