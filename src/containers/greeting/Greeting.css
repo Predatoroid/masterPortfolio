@@ -2,7 +2,7 @@
   width: 90%;
   padding: 20px 10px;
   margin: 0px auto;
-  margin-top: 4rem;
+  margin-top: 0rem;
 }
 .greet-main {
   width: 90%;
@@ -31,9 +31,15 @@
 }
 
 .greeting-text {
-  margin-top: 80px;
   font-size: 70px;
   line-height: 1.1;
+  margin-bottom: 0px;
+  font-family: "Google Sans Bold";
+}
+
+.greeting-profession-p {
+  font-size: 16px;
+  line-height: normal;
   font-family: "Google Sans Bold";
 }
 
@@ -44,6 +50,7 @@
 }
 
 .greeting-text-p {
+  margin-top: 70px;
   font-size: 40px;
   line-height: 40px;
   margin-right: 40px;
@@ -83,7 +90,12 @@
   .greeting-text {
     font-size: 50px;
   }
+  .greeting-profession-p {
+    font-size: 16px;
+    line-height: normal;
+  }
   .greeting-text-p {
+    margin-top: 0px;
     font-size: 20px;
   }
   .quote-heading-text {
@@ -101,6 +113,11 @@
   .greeting-text {
     font-size: 30px;
     margin-top: 0px;
+    text-align: center;
+  }
+  .greeting-profession-p {
+    font-size: 12px;
+    line-height: normal;
     text-align: center;
   }
   .greeting-nickname {

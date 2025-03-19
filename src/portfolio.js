@@ -19,10 +19,11 @@ const seo = {
 //Home Page
 const greeting = {
   title: "Στεργιοπούλου Γεωργία",
+  profession:
+    "Ψυχολόγος MA Αναπτυξιακή Ψυχολογία - εκπ. Γνωσιακή Συμπεριφορική Ψυχοθεραπεύτρια",
   logo_name: "Stergiopoulou Georgia",
   nickname: "stergiopoulou_georgia",
-  subTitle:
-    "Νέα ψυχολόγος γεμάτη διάθεση για προσφορά. Θεωρώ τη θεραπεία ως ένα ταξίδι που μπορεί να οδηγήσει στην αυτεπίγνωση αλλά και στη συναισθηματική ενδυνάμωση του ατόμου.",
+  subTitle: "Καλώς ήρθατε στο διαδικτυακό μου τόπο!",
   resumeLink: "CV-Stergiopoulou_Georgia.pdf",
   portfolio_repository: "",
   githubProfile: "",
@@ -52,45 +53,50 @@ const socialMediaLinks = [
   },
   {
     name: "Facebook",
-    link: "https://www.facebook.com/profile.php?id=100009927990841",
-    fontAwesomeIcon: "fa-facebook-f", // Reference https://fontawesome.com/icons/facebook-f?style=brands
-    backgroundColor: "#1877F2", // Reference https://simpleicons.org/?q=facebook
+    link: "https://www.instagram.com/stergiopoulou.psy",
+    fontAwesomeIcon: "fa-instagram", // Reference https://fontawesome.com/icons/facebook-f?style=brands
+    backgroundColor: "#E4405F", // Reference https://simpleicons.org/?q=facebook
   },
+  // {
+  //   name: "Facebook",
+  //   link: "https://www.facebook.com/profile.php?id=100009927990841",
+  //   fontAwesomeIcon: "fa-facebook-f", // Reference https://fontawesome.com/icons/facebook-f?style=brands
+  //   backgroundColor: "#1877F2", // Reference https://simpleicons.org/?q=facebook
+  // },
 ];
 
 const skills = {
   data: [
     {
-      title: "Εκπαίδευση",
+      title: "",
       fileName: "FullStackImg",
       skills: [
-        "⚡ Building resposive website front end using React-Redux",
-        "⚡ Developing mobile applications using Flutter, React Native and solo android apps using Kotlin",
-        "⚡ Creating application backend in Node, Express & Flask",
+        "Γεια σας! Λέγομαι Στεργιοπούλου Γεωργία, είμαι Ψυχολόγος με Μεταπτυχιακή Εκπαίδευση στην Αναπτυξιακή Ψυχολογία στο Πανεπιστήμιο Κρήτης. Έχω εκπαιδευτεί στη Γνωσιακή Συμπεριφορική Ψυχοθεραπεία (CBT) στο Ινστιτούτο Έρευνας και Θεραπείας  Συμπεριφοράς.",
+        "Εδώ θα βρείτε πληροφορίες για το εκπαιδευτικό και ακαδημαϊκό μου υπόβαθρο, την κλινική μου εμπειρία, την Γνωσιακή προσέγγιση ως μέθοδο ψυχοθεραπείας, αλλά και το πώς μπορούμε αποκτήσουμε μια θεραπευτική συνεργασία.",
       ],
       softwareSkills: [],
     },
     {
-      title: "Εργασιακή Εμπειρία",
+      title: "Βιογραφικό",
       fileName: "CloudInfraImg",
       skills: [
-        "⚡ Experience working on multiple cloud platforms",
-        "⚡ Hosting and maintaining websites on virtual machine instances along with integration of databases",
-        "⚡ Deploying deep learning models on cloud to use on mobile devices",
-        "⚡ Setting up streaming jobs from DB to Server or vice-versa on GCP and AWS",
+        "Η Γεωργία Στεργιοπούλου, κάτοχος άδειας άσκησης επαγγέλματος Ψυχολόγου στην Ελλάδα (Αρ. Πρώτ. 3997/2020), ολοκλήρωσε τις βασικές της σπουδές στο Τμήμα Ψυχολογίας του Εθνικού και Καποδιστριακού Πανεπιστημίου Αθηνών. Έπειτα, συνέχισε τις σπουδές της σε μεταπτυχιακό επίπεδο στο αντικείμενο της Αναπτυξιακής Ψυχολογίας στο Πανεπιστήμιο Κρήτης όπου αποφοίτησε με Άριστα. Έχει ολοκληρώσει θεωρητική εκπαίδευση στη Γνωσιακή Συμπεριφορική Θεραπεία (CBT), στην Εταιρεία Γνωσιακών και Συμπεριφοριστικών Σπουδών, σύμφωνα με τα κριτήρια της European Association for Behavioral and Cognitive Therapies (EAΒCT).",
+        "Διαθέτει κλινική και πρακτική εμπειρία σε ποικίλους φορείς ψυχικής υγείας, όπως το 401 Γενικό Στρατιωτικό Νοσοκομείο, η Κινητή Μονάδα Ψυχικής Υγείας Λασιθίου, το Οικοτροφείο «Αθηνά» της Πανελλήνιας Ένωσης για την Ψυχοκοινωνική Αποκατάσταση και Επαγγελματική Επανένταξη (ΠΕΨΑΕΕ).",
+        "Επιπλέον, έχει εργαστεί στο κέντρο Ειδικών Θεραπειών «Σοφία Τσαντουλή», παρέχοντας υπηρεσίας Ψυχοθεραπείας σε παιδιά και εφήβους καθώς και Συμβουλευτική Γονέων.",
+        "Εργάζεται ιδιωτικά, παρέχοντας συνεδρίες ατομικής ψυχοθεραπείας σε ενήλικες με ευρύ φάσμα διαπροσωπικών δυσκολιών (χωρισμός, πένθος ), με  κατάθλιψη, αγχώδεις διαταραχές (Γενικευμένη Αγχώδης Διαταραχή, διαταραχή Πανικού, κοινωνική αγχώδης διαταραχή, φοβίες), ιδεοψυχαναγκαστική διαταραχή, διαταραχή μετατραυματικού στρές και διαταραχές προσωπικότητας (οριακή, ναρκισσιστική, σχιζοειδής).",
       ],
       softwareSkills: [],
     },
-    {
-      title: "Λοιπές δραστηριότητες",
-      fileName: "DesignImg",
-      skills: [
-        "⚡ Designing highly attractive user interface for mobile and web applications",
-        "⚡ Customizing logo designs and building logos from scratch",
-        "⚡ Creating the flow of application functionalities to optimize user experience",
-      ],
-      softwareSkills: [],
-    },
+    // {
+    //   title: "Λοιπές δραστηριότητες",
+    //   fileName: "DesignImg",
+    //   skills: [
+    //     "⚡ Designing highly attractive user interface for mobile and web applications",
+    //     "⚡ Customizing logo designs and building logos from scratch",
+    //     "⚡ Creating the flow of application functionalities to optimize user experience",
+    //   ],
+    //   softwareSkills: [],
+    // },
   ],
 };
 
@@ -143,13 +149,15 @@ const competitiveSites = {
 const degrees = {
   degrees: [
     {
-      title: "Πανεπιστήμιο Κρήτης",
-      subtitle: "Τμήμα Ιατρικής",
+      title: "Εταιρεία Γνωσιακών & Συμπεριφοριστικών Σπουδών",
+      subtitle: "Ινστιτούτο Έρευνας & Θεραπείας Συμπεριφοράς",
       logo_path: "iiitk_logo.png",
-      alt_name: "Πανεπιστήμιο Κρήτης",
-      duration: "2021 - 2023",
-      descriptions: ["⚡ Εκπαίδευση στις Γνωσιακές - Συμπεριφορικές Θεραπείες"],
-      website_link: "http://www.med.uoc.gr/",
+      alt_name: "Εταιρεία Γνωσιακών & Συμπεριφοριστικών Σπουδών",
+      duration: "2022 - 2026",
+      descriptions: [
+        "⚡ Εκπαίδευση στη Γνωσιακή & Συμπεριφορική Θεραπεία (CBT)",
+      ],
+      website_link: "https://cbt.edu.gr/erg/",
     },
     {
       title: "Πανεπιστήμιο Κρήτης",
@@ -290,8 +298,9 @@ const certifications = {
 // Experience Page
 const experience = {
   title: "Εμπειρία",
-  subtitle: "Εργασία & Σεμινάρια",
-  description: "TODO-fdim text ...",
+  subtitle: "",
+  description:
+    "Διαθέτει κλινική και πρακτική εμπειρία σε διάφορους φορείς ψυχικής υγείας, όπως στρατιωτικά νοσοκομεία, κινητές μονάδες και δομές ψυχοκοινωνικής αποκατάστασης. Έχει εργαστεί σε κέντρο ειδικών θεραπειών, παρέχοντας ψυχοθεραπεία σε παιδιά, εφήβους και συμβουλευτική γονέων. Σήμερα δραστηριοποιείται ιδιωτικά, προσφέροντας ατομική ψυχοθεραπεία σε ενήλικες με διαπροσωπικές δυσκολίες, κατάθλιψη, αγχώδεις διαταραχές, ιδεοψυχαναγκαστική διαταραχή, μετατραυματικό στρες και διαταραχές προσωπικότητας.",
   header_image_path: "experience.svg",
   sections: [
     {
@@ -299,8 +308,30 @@ const experience = {
       experiences: [
         {
           title: "Ψυχολόγος",
+          company: "Ψυχοθεραπεύτρια - Ιδιωτική Άσκηση Επαγγέλματος",
+          company_url: "https://www.instagram.com/stergiopoulou.psy",
+          logo_path: "legato_logo.png",
+          duration: "06/2020 - Σήμερα",
+          location: "Αθήνα, Ελλάδα",
+          description:
+            "• Αξιολόγηση και κατανόηση του ιστορικού και των συμπτωμάτων του ασθενούς\n• Αναγνώριση και αμφισβήτηση αρνητικών σκέψεων και πεποιθήσεων\n• Τεχνικές διαχείρισης άγχους και κατάθλιψης, όπως χαλάρωση, ενσυνειδητότητα (mindfulness)\n• Ανάπτυξη υγιών συμπεριφορών και ενίσχυση της αυτοεκτίμησης\n• Αξιολόγηση προόδου και προσαρμογή της θεραπείας για βελτιστοποίηση των αποτελεσμάτων",
+          color: "#0879bf",
+        },
+        {
+          title: "Ψυχολόγος",
+          company: "Οικοτροφείο Αθηνά ΠΕΨΑΕΕ",
+          company_url:
+            "https://www.pepsaee.gr/%CE%94%CE%BF%CE%BC%CE%AD%CF%82/%CE%9F%CE%B9%CE%BA%CE%BF%CF%84%CF%81%CE%BF%CF%86%CE%B5%CE%AF%CE%BF-%CE%91%CE%B8%CE%B7%CE%BD%CE%AC",
+          logo_path: "legato_logo.png",
+          duration: "06/2023 - Σήμερα",
+          location: "Αθήνα, Ελλάδα",
+          description:
+            "• Αξιολόγηση ψυχιατρικών αναγκών των ενοίκων και παρακολούθηση της ψυχικής τους κατάστασης\n• Υποστήριξη και ψυχολογική υποστήριξη για την ενίσχυση της συναισθηματικής ευημερίας\n• Στρατηγικές διαχείρισης συμπτωμάτων και ενίσχυση των κοινωνικών δεξιοτήτων για καλύτερη ένταξη στην κοινότητα\n• Συνεργασία με άλλους επαγγελματίες υγείας για ολοκληρωμένη φροντίδα και ανάπτυξη θεραπευτικών σχεδίων\n• Εκπαίδευση και υποστήριξη οικογενειών για την καλύτερη κατανόηση και υποστήριξη των ψυχοκοινωνικών αναγκών των ενοίκων\n• Νοητική ενδυνάμωση ατόμων με άνοια, μέσω δραστηριοτήτων και ασκήσεων που ενισχύουν τη μνήμη, την προσοχή και τις γνωστικές ικανότητες",
+          color: "#0879bf",
+        },
+        {
+          title: "Ψυχολόγος",
           company: "Κέντρο Ειδικών Θεραπειών - Τσαντουλή Σοφία",
-          company_url: "https://www.thecepsy.gr/",
           logo_path: "legato_logo.png",
           duration: "06/2022 - Σήμερα",
           location: "Αθήνα, Ελλάδα",
@@ -313,7 +344,7 @@ const experience = {
           company: "Κινητή Μονάδα Ψυχικής Υγείας Λασιθίου",
           company_url: "https://arwgi.gr/",
           logo_path: "muffito_logo.png",
-          duration: "01/2021 - 06/2022",
+          duration: "06/2020 - 06/2022",
           location: "Άγιος Νικόλαος (Λασιθίου), Ελλάδα",
           description:
             "• Λήψη Κοινωνικού Ιστορικού\n• Ψυχοθεραπεία/ Ψυχολογική Υποστήριξη & Συμβουλευτική Γονέων\n• Επαγγελματική Συμβουλευτική & Χορήγηση ψυχομετρικών εργαλείων (WISC-V, WAIS-IV)",
@@ -336,6 +367,75 @@ const experience = {
       title: "Σεμινάρια",
       experiences: [
         {
+          title:
+            "Επιστημονικό Συνέδριο Recovery Ανάκαμψη στην Ψυχική Υγεία: Συμπερίληψη και Δικαιώματα, 2024",
+          company: "Ομοσπονδία «Αργώ»",
+          logo_path: "delhivery_logo.png",
+          location: "Αθήνα, Ελλάδα",
+          description: "",
+          color: "#ee3c26",
+        },
+        {
+          title:
+            "Συμμετοχή με poster στο 30ο  Πανελλήνιο Συνέδριο Ψυχιατρικής, 2022",
+          company: "Ελληνική Ψυχιατρική Εταιρεία",
+          logo_path: "delhivery_logo.png",
+          location: "Θεσσαλονίκη, Ελλάδα",
+          description: "",
+          color: "#e64a19",
+        },
+        {
+          title: "6ο Πανελλήνιο Συνέδριο Γνωσιακών Ψυχοθεραπειών, 2019",
+          company: "Ελληνική Εταιρεία Έρευνας της Συμπεριφοράς",
+          logo_path: "delhivery_logo.png",
+          location: "Θεσσαλονίκη, Ελλάδα",
+          description: "",
+          color: "#f39c12",
+        },
+        {
+          title:
+            "Διημερίδα με θέμα «ΛΟΑΤΚΙ+ Δικαιώματα, Ψυχική Υγεία & Κοινωνικές Προεκτάσεις», 2018",
+          company: "Orlando LGBTQ+",
+          logo_path: "delhivery_logo.png",
+          location: "Αθήνα, Ελλάδα",
+          description: "",
+          color: "#8e44ad",
+        },
+        {
+          title:
+            "Ημερίδα με θέμα «Σεξουαλικότητα και Σεξουαλικές Δυσλειτουργίες, 2018",
+          company: "Δίκτυο Νέων Ψυχιάτρων",
+          logo_path: "delhivery_logo.png",
+          location: "Αθήνα, Ελλάδα",
+          description: "",
+          color: "#c0392b",
+        },
+        {
+          title: "6ο Πανελλήνιο Συνέδριο Αναπτυξιακής Ψυχολογίας, 2018",
+          company: "Ελληνική Ψυχολογική Εταιρεία",
+          logo_path: "delhivery_logo.png",
+          location: "Θεσσαλονίκη, Ελλάδα",
+          description: "",
+          color: "#27ae60",
+        },
+        {
+          title: "11ο Συνέδριο «Πένθη και Καταθλίψεις», 2017",
+          company: "Ελληνική Ψυχαναλυτική Εταιρεία",
+          logo_path: "delhivery_logo.png",
+          location: "Αθήνα, Ελλάδα",
+          description: "",
+          color: "#16a085",
+        },
+        {
+          title:
+            "Επιστημονική Ημερίδα με θέμα «Αξιοπρέπεια του Ανθρώπου και Ανθρώπινα Δικαιώματα», 2016",
+          company: "UNESCO",
+          logo_path: "delhivery_logo.png",
+          location: "Αθήνα, Ελλάδα",
+          description: "",
+          color: "#2980b9",
+        },
+        {
           title: "Σχολική Ψυχολογία",
           company: "Πανεπιστήμιο Αιγαίου",
           company_url:
@@ -344,7 +444,7 @@ const experience = {
           duration: "440 ώρες, 9 μήνες",
           location: "Ρόδος",
           description: "",
-          color: "#ee3c26",
+          color: "#34495e",
         },
         {
           title: "Ειδική Αγωγή",
@@ -381,7 +481,7 @@ const publicationsHeader = {
 const contactPageData = {
   contactSection: {
     title: "Επικοινωνήστε μαζί μου",
-    profile_image_path: "animated_ashutosh.png",
+    profile_image_path: "georgia-profile.png",
     description:
       "Μπορείτε να επικοινωνήσετε μαζί μου στα παρακάτω στοιχεία καθώς και σχεδόν σε όλα τα social media",
   },

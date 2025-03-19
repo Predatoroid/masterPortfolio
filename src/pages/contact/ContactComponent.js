@@ -29,16 +29,19 @@ class Contact extends Component {
                 <img
                   src={require(`../../assets/images/${ContactData["profile_image_path"]}`)}
                   alt=""
-                  width="65%"
+                  width="45%"
                 />
                 <h3
                   className="quote-heading-text"
                   style={{ color: theme.text }}
                 >
                   {
-                    "“A recipe has no soul, you as the cook must bring soul to the recipe„"
+                    "“Δεν είναι τα πράγματα που ταράζουν τους ανθρώπους αλλά η γνώμη που έχουν για τα πράγματα„"
                   }
                 </h3>
+                <p className="quote-text" style={{ color: theme.text }}>
+                  {"-Επίκτητος"}
+                </p>
               </div>
               <div className="contact-heading-text-div">
                 <h1
@@ -88,14 +91,14 @@ class Contact extends Component {
 
                 <SocialMedia theme={theme} />
 
-                <div className="resume-btn-div">
-                  <Button
-                    text="Δες το βιογραφικό μου"
-                    newTab={true}
-                    href={require(`../../assets/files/${resumeLink}`)}
-                    theme={theme}
-                  />
-                </div>
+                {/*<div className="resume-btn-div">*/}
+                {/*  <Button*/}
+                {/*    text="Δες το βιογραφικό μου"*/}
+                {/*    newTab={true}*/}
+                {/*    href={require(`../../assets/files/${resumeLink}`)}*/}
+                {/*    theme={theme}*/}
+                {/*  />*/}
+                {/*</div>*/}
               </div>
             </div>
           </Fade>

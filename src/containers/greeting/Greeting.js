@@ -18,6 +18,12 @@ export default function Greeting(props) {
                 {greeting.title}
               </h1>
               <p
+                className="greeting-profession-p"
+                style={{ color: theme.secondaryText }}
+              >
+                {greeting.profession}
+              </p>
+              <p
                 className="greeting-text-p subTitle"
                 style={{ color: theme.secondaryText }}
               >
@@ -39,11 +45,10 @@ export default function Greeting(props) {
           </div>
         </div>
         <h3 className="quote-heading-text" style={{ color: theme.text }}>
-          {"“A journey of a thousand miles must begin with a single step„"}
+          {
+            "“Η εξερεύνηση του εαυτού μας είναι το πρώτο βήμα προς την ουσιαστική αλλαγή„"
+          }
         </h3>
-        <p className="quote-text" style={{ color: theme.text }}>
-          {"-Lao Tzu"}
-        </p>
       </div>
     </Fade>
   );

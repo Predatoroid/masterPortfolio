@@ -131,4 +131,16 @@ export const frozenDreamsTheme = {
   headerColor: "#0E6BA877",
 };
 
-export const chosenTheme = frozenDreamsTheme;
+export const softPeachTheme = {
+  body: "linear-gradient(to left, #FFF5EC, #FFEDE3)",
+  text: "#7A4B35",
+  highlight: "#FAD4BA",
+  dark: "#5A2D16",
+  secondaryText: "#B98A75",
+  imageHighlight: "#E7A17A",
+  compImgHighlight: "#E6E6E6",
+  jacketColor: "#D0896E",
+  headerColor: "#E7A17A77",
+};
+
+export const chosenTheme = softPeachTheme;
