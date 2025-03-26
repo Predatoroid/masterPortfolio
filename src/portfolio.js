@@ -151,7 +151,7 @@ const degrees = {
     {
       title: "Εταιρεία Γνωσιακών & Συμπεριφοριστικών Σπουδών",
       subtitle: "Ινστιτούτο Έρευνας & Θεραπείας Συμπεριφοράς",
-      logo_path: "iiitk_logo.png",
+      logo_path: "299483022_439038911581522_3470611822308034606_n.png",
       alt_name: "Εταιρεία Γνωσιακών & Συμπεριφοριστικών Σπουδών",
       duration: "2022 - 2026",
       descriptions: [
@@ -162,7 +162,7 @@ const degrees = {
     {
       title: "Πανεπιστήμιο Κρήτης",
       subtitle: "Παιδαγωγικό Τμήμα Προσχολικής Εκπαίδευσης",
-      logo_path: "iiitk_logo.png",
+      logo_path: "309242282_460116232819470_3137526444353857927_n.png",
       alt_name: "Πανεπιστήμιο Κρήτης",
       duration: "2021 - 2023",
       descriptions: [
@@ -173,7 +173,7 @@ const degrees = {
     {
       title: "Εθνικό και Καποδιστριακό Πανεπιστήμιο Αθηνών (ΕΚΠΑ)",
       subtitle: "Τμήμα Ψυχολογίας",
-      logo_path: "iiitk_logo.png",
+      logo_path: "LOGO_UOA COL2.png",
       alt_name: "Εθνικό και Καποδιστριακό Πανεπιστήμιο Αθηνών (ΕΚΠΑ)",
       duration: "2016 - 2020",
       descriptions: ["⚡ Πτυχίο Ψυχολογίας", "⚡ Βαθμός: 8.05/10"],
@@ -481,7 +481,8 @@ const publicationsHeader = {
 const contactPageData = {
   contactSection: {
     title: "Επικοινωνήστε μαζί μου",
-    profile_image_path: "georgia-profile.png",
+    // profile_image_path: "georgia-profile.png",
+    profile_image_path: "DSC_0506_cropped.jpg",
     description:
       "Μπορείτε να επικοινωνήσετε μαζί μου στα παρακάτω στοιχεία καθώς και σχεδόν σε όλα τα social media",
   },

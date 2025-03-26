@@ -5,10 +5,15 @@
   margin-top: 0rem;
 }
 .greet-main {
-  width: 90%;
   padding: 20px 10px;
   margin: 0px auto;
   margin-top: 2rem;
+  background-image: url("../../assets/images/flower-created-from-transparent-material-pastel-background.jpg");
+  background-size: cover; /* Ensures the image fills the width */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents tiling */
+  width: 100%; /* Ensure container takes full width */
+  height: 100vh; /* Adjust as needed */
 }
 
 .gretting-main {
@@ -58,7 +63,7 @@
 }
 
 .greeting-image-div > * {
-  max-width: 100%;
+  max-width: 50%;
   height: auto;
 }
 

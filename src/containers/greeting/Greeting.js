@@ -5,6 +5,7 @@ import Button from "../../components/button/Button";
 import { greeting } from "../../portfolio";
 import { Fade } from "react-reveal";
 import FeelingProud from "./FeelingProud";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 export default function Greeting(props) {
   const theme = props.theme;
@@ -37,11 +38,7 @@ export default function Greeting(props) {
             </div>
           </div>
           <div className="greeting-image-div">
-            {/* <img
-							alt="saad sitting on table"
-							src={require("../../assets/images/feelingProud.svg")}
-						></img> */}
-            <FeelingProud theme={theme} />
+            {/*<FeelingProud theme={theme} />*/}
           </div>
         </div>
         <h3 className="quote-heading-text" style={{ color: theme.text }}>

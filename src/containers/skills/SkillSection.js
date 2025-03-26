@@ -7,14 +7,29 @@ import DataScienceImg from "./DataScienceImg";
 import FullStackImg from "./FullStackImg";
 import CloudInfraImg from "./CloudInfraImg";
 import DesignImg from "./DesignImg";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 function GetSkillSvg(props) {
   if (props.fileName === "DataScienceImg")
     return <DataScienceImg theme={props.theme} />;
   else if (props.fileName === "FullStackImg")
-    return <FullStackImg theme={props.theme} />;
+    return (
+      <LazyLoadImage
+        alt="Profile Picture"
+        style={{ width: "70%", borderRadius: "5%", float: "right" }}
+        src={require("../../assets/images/DSC_0533_cropped.jpg")}
+      />
+    );
+  // return <FullStackImg theme={props.theme} />;
   else if (props.fileName === "CloudInfraImg")
-    return <CloudInfraImg theme={props.theme} />;
+    return (
+      <LazyLoadImage
+        alt="Profile Picture"
+        style={{ width: "70%", borderRadius: "5%", float: "right" }}
+        src={require("../../assets/images/animated-psychotherapy8_HQ.jpg")}
+      />
+    );
+  // return <CloudInfraImg theme={props.theme} />;
   return <DesignImg theme={props.theme} />;
 }
 
@@ -32,6 +47,7 @@ class SkillSection extends Component {
                     alt="Ashutosh is Analysing Data"
                     src={require(`../../assets/images/${skill.imagePath}`)}
                   ></img> */}
+
                   <GetSkillSvg fileName={skill.fileName} theme={theme} />
                 </div>
               </Fade>
