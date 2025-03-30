@@ -7,6 +7,7 @@ import "./Experience.css";
 import { experience } from "../../portfolio.js";
 import { Fade } from "react-reveal";
 import ExperienceImg from "./ExperienceImg";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 // const experience = {
 // 	title: "Experience",
@@ -154,11 +155,12 @@ class Experience extends Component {
           <Fade bottom duration={2000} distance="40px">
             <div className="experience-heading-div">
               <div className="experience-heading-img-div">
-                {/* <img
-									src={require(`../../assets/images/${experience["header_image_path"]}`)}
-									alt=""
-								/> */}
-                <ExperienceImg theme={theme} />
+                <LazyLoadImage
+                  alt="Profile Picture"
+                  style={{ width: "50%", borderRadius: "5%", float: "right" }}
+                  src={require(`../../assets/images/${experience["header_image_path"]}`)}
+                />
+                {/*<ExperienceImg theme={theme} />*/}
               </div>
               <div className="experience-heading-text-div">
                 <h1

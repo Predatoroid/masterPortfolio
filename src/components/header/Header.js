@@ -4,6 +4,7 @@ import { Fade } from "react-reveal";
 import { NavLink, Link } from "react-router-dom";
 import { greeting, settings } from "../../portfolio.js";
 import SeoHeader from "../seoHeader/SeoHeader";
+import logo from "../../assets/images/logo-georgia_v2.png"; // Adjust the path to your logo file
 
 const onMouseEnter = (event, color) => {
   const el = event.target;
@@ -26,9 +27,10 @@ class Header extends Component {
         <div>
           <header className="header">
             <NavLink to={link} tag={Link} className="logo">
-              <span className="logo-name" style={{ color: theme.text }}>
-                {greeting.logo_name}
-              </span>
+              <img src={logo} alt="Logo" className="header-logo" />
+              {/*<span className="logo-name" style={{color: theme.text}}>*/}
+              {/*  {greeting.logo_name}*/}
+              {/*</span>*/}
               {/* <span style={{ color: theme.text }}>/&gt;</span> */}
             </NavLink>
             <input className="menu-btn" type="checkbox" id="menu-btn" />

@@ -8,13 +8,14 @@ import BlogsImg from "./BlogsImg";
 import AddressImg from "./AddressImg";
 import { Fade } from "react-reveal";
 import "./ContactComponent.css";
-import { greeting, contactPageData } from "../../portfolio.js";
+import { greeting, contactPageData, experience } from "../../portfolio.js";
 
 const ContactData = contactPageData.contactSection;
 const blogSection = contactPageData.blogSection;
 const addressSection = contactPageData.addressSection;
 const phoneSection = contactPageData.phoneSection;
 const resumeLink = greeting.resumeLink;
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 class Contact extends Component {
   render() {
@@ -29,7 +30,7 @@ class Contact extends Component {
                 <img
                   src={require(`../../assets/images/${ContactData["profile_image_path"]}`)}
                   alt=""
-                  width="45%"
+                  width="35%"
                 />
                 <h3
                   className="quote-heading-text"
@@ -109,7 +110,13 @@ class Contact extends Component {
 											src={require(`../../assets/images/${addressSection["avatar_image_path"]}`)}
 											alt=""
 										/> */}
-                <AddressImg theme={theme} />
+
+                <LazyLoadImage
+                  alt="Telephone"
+                  style={{ width: "50%", borderRadius: "5%" }}
+                  src={require(`../../assets/images/telephone-abstract.png`)}
+                />
+                {/*<AddressImg theme={theme} />*/}
               </div>
             </div>
           </Fade>

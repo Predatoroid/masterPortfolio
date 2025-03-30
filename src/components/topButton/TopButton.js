@@ -1,7 +1,10 @@
 import React from "react";
 import "./TopButton.css";
+import { rgb } from "polished";
 
 export default function TopButton({ theme }) {
+  const arrowColor = rgb(255, 255, 255);
+
   function GoUpEvent() {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
@@ -25,24 +28,24 @@ export default function TopButton({ theme }) {
   const onMouseEnter = (color, bgColor) => {
     /* For the button */
     const topButton = document.getElementById("topButton");
-    topButton.style.color = color;
+    topButton.style.color = arrowColor;
     topButton.style.backgroundColor = bgColor;
 
     /* For arrow icon */
     const arrow = document.getElementById("arrow");
-    arrow.style.color = color;
+    arrow.style.color = arrowColor;
     arrow.style.backgroundColor = bgColor;
   };
 
   const onMouseLeave = (color, bgColor) => {
     /* For the button */
     const topButton = document.getElementById("topButton");
-    topButton.style.color = color;
+    topButton.style.color = arrowColor;
     topButton.style.backgroundColor = bgColor;
 
     /* For arrow icon */
     const arrow = document.getElementById("arrow");
-    arrow.style.color = color;
+    arrow.style.color = arrowColor;
     arrow.style.backgroundColor = bgColor;
   };
 
@@ -51,7 +54,7 @@ export default function TopButton({ theme }) {
       onClick={GoUpEvent}
       id="topButton"
       style={{
-        color: theme.body,
+        color: arrowColor,
         backgroundColor: theme.text,
         border: `solid 1px ${theme.text}`,
       }}

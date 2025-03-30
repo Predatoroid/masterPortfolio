@@ -1,9 +1,9 @@
 /* header */
 
 .header {
-  display: block;
+  display: flex;
   max-width: 90%;
-  padding: 20px 10px;
+  padding: 0px 10px;
   margin: 0px auto;
 }
 
@@ -14,8 +14,13 @@
   overflow: hidden;
   /* background-color: #fff; */
 }
+
 .grey-color {
   color: #868e96;
+}
+
+.header li {
+  float: none; /* Remove float */
 }
 
 .header li a {
@@ -52,6 +57,10 @@
 .header li a:hover,
 .header .menu-btn:hover {
   /* background-color: #A6E1FA; */
+}
+
+.header-logo {
+  height: 80px; /* Adjust size as needed */
 }
 
 .header .logo {
@@ -156,7 +165,7 @@
   .header {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
   }
   .header .menu {
     max-height: none;

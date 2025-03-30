@@ -40,12 +40,12 @@ export default function Greeting(props) {
           <div className="greeting-image-div">
             {/*<FeelingProud theme={theme} />*/}
           </div>
+          <h3 className="quote-heading-text" style={{ color: theme.text }}>
+            {
+              "“Η εξερεύνηση του εαυτού μας είναι το πρώτο βήμα προς την ουσιαστική αλλαγή„"
+            }
+          </h3>
         </div>
-        <h3 className="quote-heading-text" style={{ color: theme.text }}>
-          {
-            "“Η εξερεύνηση του εαυτού μας είναι το πρώτο βήμα προς την ουσιαστική αλλαγή„"
-          }
-        </h3>
       </div>
     </Fade>
   );

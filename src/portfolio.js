@@ -8,9 +8,10 @@ const settings = {
 //SEO Related settings
 const seo = {
   title: "Στεργιοπούλου Γεωργία",
-  description: "TODO text ...",
+  description:
+    "Ψυχολόγος MA Αναπτυξιακή Ψυχολογία - Γνωσιακή Συμπεριφορική Ψυχοθεραπεύτρια στην Αθήνα. Ψυχοθεραπεία και συμβουλευτική ενηλίκων/εφήβων/παιδιών με επιστημονική προσέγγιση CBT. Μαζί, ανακαλύπτουμε τον δρόμο προς την αλλαγή και την προσωπική ανάπτυξη.",
   og: {
-    title: "Stergiopoulou Georgia Portfolio",
+    title: "Ψυχολόγος Αθήνα | Ψυχοθεραπεία",
     type: "website",
     url: "https://www.stergiopoulou.com/",
   },
@@ -167,6 +168,7 @@ const degrees = {
       duration: "2021 - 2023",
       descriptions: [
         "⚡ Μεταπτυχιακό Δίπλωμα : Αναπτυξιακή Ψυχολογία και Παιδαγωγικές Εφαρμογές",
+        "⚡ Βαθμός: 8.93/10",
       ],
       website_link: "https://ptpepms-epa.edc.uoc.gr/index.php/home-pms3/",
     },
@@ -301,7 +303,7 @@ const experience = {
   subtitle: "",
   description:
     "Διαθέτει κλινική και πρακτική εμπειρία σε διάφορους φορείς ψυχικής υγείας, όπως στρατιωτικά νοσοκομεία, κινητές μονάδες και δομές ψυχοκοινωνικής αποκατάστασης. Έχει εργαστεί σε κέντρο ειδικών θεραπειών, παρέχοντας ψυχοθεραπεία σε παιδιά, εφήβους και συμβουλευτική γονέων. Σήμερα δραστηριοποιείται ιδιωτικά, προσφέροντας ατομική ψυχοθεραπεία σε ενήλικες με διαπροσωπικές δυσκολίες, κατάθλιψη, αγχώδεις διαταραχές, ιδεοψυχαναγκαστική διαταραχή, μετατραυματικό στρες και διαταραχές προσωπικότητας.",
-  header_image_path: "experience.svg",
+  header_image_path: "DSC_0506_cropped.jpg",
   sections: [
     {
       title: "Εργασία",
@@ -481,8 +483,8 @@ const publicationsHeader = {
 const contactPageData = {
   contactSection: {
     title: "Επικοινωνήστε μαζί μου",
-    // profile_image_path: "georgia-profile.png",
-    profile_image_path: "DSC_0506_cropped.jpg",
+    profile_image_path: "georgia-profile.png",
+    // profile_image_path: "DSC_0506_cropped.jpg",
     description:
       "Μπορείτε να επικοινωνήσετε μαζί μου στα παρακάτω στοιχεία καθώς και σχεδόν σε όλα τα social media",
   },
