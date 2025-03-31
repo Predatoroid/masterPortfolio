@@ -9,13 +9,13 @@ import AddressImg from "./AddressImg";
 import { Fade } from "react-reveal";
 import "./ContactComponent.css";
 import { greeting, contactPageData, experience } from "../../portfolio.js";
+import { LazyLoadImage } from "react-lazy-load-image-component";
 
 const ContactData = contactPageData.contactSection;
 const blogSection = contactPageData.blogSection;
 const addressSection = contactPageData.addressSection;
 const phoneSection = contactPageData.phoneSection;
 const resumeLink = greeting.resumeLink;
-import { LazyLoadImage } from "react-lazy-load-image-component";
 
 class Contact extends Component {
   render() {

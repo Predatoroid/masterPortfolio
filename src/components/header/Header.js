@@ -1,10 +1,10 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import "./Header.css";
 import { Fade } from "react-reveal";
 import { NavLink, Link } from "react-router-dom";
 import { greeting, settings } from "../../portfolio.js";
 import SeoHeader from "../seoHeader/SeoHeader";
-import logo from "../../assets/images/logo-georgia_v2.png"; // Adjust the path to your logo file
+import logo from "../../assets/images/logo-georgia_v2.png";
 
 const onMouseEnter = (event, color) => {
   const el = event.target;
@@ -16,117 +16,52 @@ const onMouseOut = (event) => {
   el.style.backgroundColor = "transparent";
 };
 
-class Header extends Component {
-  render() {
-    const theme = this.props.theme;
-    console.log(theme);
-    const link = settings.isSplash ? "/splash" : "home";
-    return (
-      <Fade top duration={1000} distance="20px">
-        <SeoHeader />
-        <div>
-          <header className="header">
-            <NavLink to={link} tag={Link} className="logo">
-              <img src={logo} alt="Logo" className="header-logo" />
-              {/*<span className="logo-name" style={{color: theme.text}}>*/}
-              {/*  {greeting.logo_name}*/}
-              {/*</span>*/}
-              {/* <span style={{ color: theme.text }}>/&gt;</span> */}
-            </NavLink>
-            <input className="menu-btn" type="checkbox" id="menu-btn" />
-            <label className="menu-icon" htmlFor="menu-btn">
-              <span className="navicon"></span>
-            </label>
-            <ul className="menu" style={{ backgroundColor: theme.body }}>
-              <li>
-                <NavLink
-                  to="/home"
-                  tag={Link}
-                  activeStyle={{ fontWeight: "bold" }}
-                  style={{ color: theme.text }}
-                  onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
-                  onMouseOut={(event) => onMouseOut(event)}
-                >
-                  Αρχική
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/education"
-                  tag={Link}
-                  activeStyle={{ fontWeight: "bold" }}
-                  style={{ color: theme.text }}
-                  onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
-                  onMouseOut={(event) => onMouseOut(event)}
-                >
-                  Σπουδές
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/experience"
-                  tag={Link}
-                  activeStyle={{ fontWeight: "bold" }}
-                  style={{ color: theme.text }}
-                  onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
-                  onMouseOut={(event) => onMouseOut(event)}
-                >
-                  Εμπειρία
-                </NavLink>
-              </li>
-              {/* <li>
-                <NavLink
-                  to="/projects"
-                  tag={Link}
-                  activeStyle={{ fontWeight: "bold" }}
-                  style={{ color: theme.text }}
-                  onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
-                  onMouseOut={(event) => onMouseOut(event)}
-                >
-                  Projects
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/opensource"
-                  tag={Link}
-                  activeStyle={{ fontWeight: "bold" }}
-                  style={{ color: theme.text }}
-                  onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
-                  onMouseOut={(event) => onMouseOut(event)}
-                >
-                  Open Source
-                </NavLink>
-              </li> */}
-              <li>
-                <NavLink
-                  to="/gallery"
-                  tag={Link}
-                  activeStyle={{ fontWeight: "bold" }}
-                  style={{ color: theme.text }}
-                  onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
-                  onMouseOut={(event) => onMouseOut(event)}
-                >
-                  Συλλογή
-                </NavLink>
-              </li>
-              <li>
-                <NavLink
-                  to="/contact"
-                  tag={Link}
-                  activeStyle={{ fontWeight: "bold" }}
-                  style={{ color: theme.text }}
-                  onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
-                  onMouseOut={(event) => onMouseOut(event)}
-                >
-                  Επικοινωνία
-                </NavLink>
-              </li>
-            </ul>
-          </header>
-        </div>
-      </Fade>
-    );
-  }
-}
+const Header = ({ theme }) => {
+  const [menuOpen, setMenuOpen] = useState(false);
+  const link = settings.isSplash ? "/splash" : "/home";
+
+  return (
+    <Fade top duration={1000} distance="20px">
+      <SeoHeader />
+      <header className="header">
+        <NavLink to={link} tag={Link} className="logo">
+          <img src={logo} alt="Logo" className="header-logo" />
+        </NavLink>
+        <input
+          className="menu-btn"
+          type="checkbox"
+          id="menu-btn"
+          checked={menuOpen}
+          onChange={() => setMenuOpen(!menuOpen)}
+        />
+        <label className="menu-icon" htmlFor="menu-btn">
+          <span className="navicon"></span>
+        </label>
+        <ul className="menu" style={{ backgroundColor: theme.body }}>
+          {[
+            { to: "/home", label: "Αρχική" },
+            { to: "/education", label: "Σπουδές" },
+            { to: "/experience", label: "Εμπειρία" },
+            { to: "/gallery", label: "Συλλογή" },
+            { to: "/contact", label: "Επικοινωνία" },
+          ].map(({ to, label }) => (
+            <li key={to}>
+              <NavLink
+                to={to}
+                tag={Link}
+                activeStyle={{ fontWeight: "bold" }}
+                style={{ color: theme.text }}
+                onMouseEnter={(event) => onMouseEnter(event, theme.highlight)}
+                onMouseOut={onMouseOut}
+              >
+                {label}
+              </NavLink>
+            </li>
+          ))}
+        </ul>
+      </header>
+    </Fade>
+  );
+};
+
 export default Header;
