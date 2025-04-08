@@ -5,6 +5,7 @@
   margin-top: 0rem;
 }
 .greet-main {
+  position: relative;
   padding: 20px 10px;
   margin: 0px auto;
   background-image: url("../../assets/images/flower-created-from-transparent-material-pastel-background.jpg");
@@ -39,13 +40,15 @@
   font-size: 70px;
   line-height: 1.1;
   margin-bottom: 0px;
-  font-family: "Google Sans Bold";
+  font-family: "Google Sans Medium", sans-serif;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 1);
 }
 
 .greeting-profession-p {
-  font-size: 16px;
+  font-size: 26px;
   line-height: normal;
-  font-family: "Google Sans Bold";
+  font-family: "Google Sans Medium", sans-serif;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 1);
 }
 
 .greeting-nickname {
@@ -59,7 +62,8 @@
   font-size: 40px;
   line-height: 40px;
   margin-right: 40px;
-  font-family: "Google Sans Medium";
+  font-family: "Google Sans Medium", sans-serif;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 1);
 }
 
 .greeting-image-div > * {
@@ -80,7 +84,7 @@
   font-family: "Google Sans Medium";
   line-height: 1.1;
   text-align: center;
-  margin-top: 60px;
+  margin-top: 0px;
 }
 
 .quote-text {
@@ -88,6 +92,22 @@
   font-family: "Google Sans Medium";
   line-height: 1.1;
   text-align: center;
+}
+
+.bottom-left {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.bottom-right {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  text-align: right;
 }
 
 /* Media Query */
@@ -121,7 +141,7 @@
     text-align: center;
   }
   .greeting-profession-p {
-    font-size: 12px;
+    font-size: 26px;
     line-height: normal;
     text-align: center;
   }

@@ -24,13 +24,7 @@ export default function Greeting(props) {
               >
                 {greeting.profession}
               </p>
-              <p
-                className="greeting-text-p subTitle"
-                style={{ color: theme.secondaryText }}
-              >
-                {greeting.subTitle}
-              </p>
-              <SocialMedia theme={theme} />
+              <div className="bottom-left"></div>
               {/* <div className="button-greeting-div">
               <Button text="Contact me" href="#contact" />
               <Button text="See my resume" newTab={true} href={greeting.resumeLink} />
@@ -40,11 +34,20 @@ export default function Greeting(props) {
           <div className="greeting-image-div">
             {/*<FeelingProud theme={theme} />*/}
           </div>
-          <h3 className="quote-heading-text" style={{ color: theme.text }}>
-            {
-              "“Η εξερεύνηση του εαυτού μας είναι το πρώτο βήμα προς την ουσιαστική αλλαγή„"
-            }
-          </h3>
+          <div className="bottom-right">
+            {/*<h3 className="quote-heading-text" style={{color: theme.text}}>*/}
+            {/*  {*/}
+            {/*    "“Η εξερεύνηση του εαυτού μας είναι το πρώτο βήμα προς την ουσιαστική αλλαγή„"*/}
+            {/*  }*/}
+            {/*</h3>*/}
+            <p
+              className="greeting-text-p subTitle"
+              style={{ color: theme.secondaryText }}
+            >
+              {greeting.subTitle}
+            </p>
+            <SocialMedia theme={theme} />
+          </div>
         </div>
       </div>
     </Fade>
