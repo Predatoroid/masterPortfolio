@@ -1,6 +1,13 @@
 .skills-main-div {
   display: flex;
-  overflow: hidden;
+  align-items: center; /* vertically center image + text */
+  justify-content: center; /* horizontally center */
+  padding: 40px;
+  background-color: #2d2d29; /* or your chosen dark background */
+  border-radius: 8px;
+  max-width: 90%;
+  margin: auto;
+  gap: 60px; /* spacing between image and text */
 }
 
 .skills-header {
@@ -15,7 +22,8 @@
 }
 
 .skills-text-div {
-  margin-left: 50px;
+  flex: 1;
+  color: white;
   font-family: "Google Sans Regular", sans-serif;
 }
 
@@ -27,7 +35,8 @@
 .skills-image-div > * {
   max-width: 100%;
   height: auto;
-  margin-top: 100px;
+  margin-top: 0;
+  border-radius: 8px;
 }
 
 .skills-heading {

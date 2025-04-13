@@ -42,7 +42,7 @@ const Header = ({ theme }) => {
             { to: "/home", label: "Αρχική" },
             { to: "/education", label: "Σπουδές" },
             { to: "/experience", label: "Εμπειρία" },
-            { to: "/gallery", label: "Συλλογή" },
+            // { to: "/gallery", label: "Συλλογή" },
             { to: "/contact", label: "Επικοινωνία" },
           ].map(({ to, label }) => (
             <li key={to}>

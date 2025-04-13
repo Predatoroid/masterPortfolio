@@ -43,18 +43,13 @@ class SkillSection extends Component {
             <div className="skills-main-div">
               <Fade left duration={2000}>
                 <div className="skills-image-div">
-                  {/* <img
-                    alt="Ashutosh is Analysing Data"
-                    src={require(`../../assets/images/${skill.imagePath}`)}
-                  ></img> */}
-
                   <GetSkillSvg fileName={skill.fileName} theme={theme} />
                 </div>
               </Fade>
 
               <div className="skills-text-div">
                 <Fade right duration={1000}>
-                  <h1 className="skills-heading" style={{ color: theme.text }}>
+                  <h1 className="skills-heading" style={{ color: "#c86e42" }}>
                     {skill.title}
                   </h1>
                 </Fade>
@@ -67,7 +62,7 @@ class SkillSection extends Component {
                       return (
                         <p
                           className="subTitle skills-text"
-                          style={{ color: theme.secondaryText }}
+                          style={{ color: "#f5f5f5" }}
                         >
                           {skillSentence}
                         </p>
