@@ -15,6 +15,24 @@ class ExperienceAccordion extends Component {
                 className="accord-panel"
                 title={section["title"]}
                 key={section["title"]}
+                overrides={{
+                  Content: {
+                    style: {
+                      backgroundColor: "#FFE8DB",
+                      color: "#333",
+                      borderRadius: "8px",
+                      padding: "10px",
+                    },
+                  },
+                  Header: {
+                    style: {
+                      backgroundColor: "#dfc0ac",
+                      color: "#333",
+                      borderRadius: "8px",
+                      padding: "10px",
+                    },
+                  },
+                }}
               >
                 {section["experiences"].map((experience) => {
                   return (

@@ -16,7 +16,12 @@ function GetSkillSvg(props) {
     return (
       <LazyLoadImage
         alt="Profile Picture"
-        style={{ width: "70%", borderRadius: "5%", float: "right" }}
+        style={{
+          width: "70%",
+          borderRadius: "5%",
+          display: "block",
+          margin: "0 auto",
+        }}
         src={require("../../assets/images/DSC_0533_cropped.jpg")}
       />
     );
@@ -25,7 +30,12 @@ function GetSkillSvg(props) {
     return (
       <LazyLoadImage
         alt="Profile Picture"
-        style={{ width: "70%", borderRadius: "5%", float: "right" }}
+        style={{
+          width: "70%",
+          borderRadius: "5%",
+          display: "block",
+          margin: "0 auto",
+        }}
         src={require("../../assets/images/animated-psychotherapy8_HQ.jpg")}
       />
     );
@@ -38,42 +48,70 @@ class SkillSection extends Component {
     const theme = this.props.theme;
     return (
       <div>
-        {skills.data.map((skill) => {
-          return (
-            <div className="skills-main-div">
-              <Fade left duration={2000}>
-                <div className="skills-image-div">
-                  <GetSkillSvg fileName={skill.fileName} theme={theme} />
-                </div>
-              </Fade>
-
-              <div className="skills-text-div">
-                <Fade right duration={1000}>
-                  <h1 className="skills-heading" style={{ color: "#c86e42" }}>
-                    {skill.title}
-                  </h1>
-                </Fade>
-                <Fade right duration={1500}>
-                  <SoftwareSkill logos={skill.softwareSkills} />
-                </Fade>
-                <Fade right duration={2000}>
-                  <div>
-                    {skill.skills.map((skillSentence) => {
-                      return (
-                        <p
-                          className="subTitle skills-text"
-                          style={{ color: "#f5f5f5" }}
-                        >
-                          {skillSentence}
-                        </p>
-                      );
-                    })}
-                  </div>
-                </Fade>
-              </div>
+        <div className="skills-summary-div">
+          <Fade left duration={2000}>
+            <div className="skills-image-div">
+              <GetSkillSvg fileName={skills.data[0].fileName} theme={theme} />
             </div>
-          );
-        })}
+          </Fade>
+
+          <div className="skills-text-div">
+            <Fade right duration={1000}>
+              <h1 className="skills-heading" style={{ color: "#c86e42" }}>
+                {skills.data[0].title}
+              </h1>
+            </Fade>
+            <Fade right duration={1500}>
+              <SoftwareSkill logos={skills.data[0].softwareSkills} />
+            </Fade>
+            <Fade right duration={2000}>
+              <div>
+                {skills.data[0].skills.map((skillSentence) => {
+                  return (
+                    <p
+                      className="subTitle skills-text"
+                      style={{ color: "#f5f5f5" }}
+                    >
+                      {skillSentence}
+                    </p>
+                  );
+                })}
+              </div>
+            </Fade>
+          </div>
+        </div>
+        <div className="skills-resume-div">
+          <Fade left duration={2000}>
+            <div className="skills-image-div">
+              <GetSkillSvg fileName={skills.data[1].fileName} theme={theme} />
+            </div>
+          </Fade>
+
+          <div className="skills-resume-text-div">
+            <Fade right duration={1000}>
+              <h1 className="skills-heading" style={{ color: "#c86e42" }}>
+                {skills.data[1].title}
+              </h1>
+            </Fade>
+            <Fade right duration={1500}>
+              <SoftwareSkill logos={skills.data[1].softwareSkills} />
+            </Fade>
+            <Fade right duration={2000}>
+              <div>
+                {skills.data[1].skills.map((skillSentence) => {
+                  return (
+                    <p
+                      className="subTitle skills-text"
+                      style={{ color: "#000000" }}
+                    >
+                      {skillSentence}
+                    </p>
+                  );
+                })}
+              </div>
+            </Fade>
+          </div>
+        </div>
       </div>
     );
   }

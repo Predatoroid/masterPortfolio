@@ -1,4 +1,4 @@
-.skills-main-div {
+.skills-summary-div {
   display: flex;
   align-items: center; /* vertically center image + text */
   justify-content: center; /* horizontally center */
@@ -7,6 +7,18 @@
   border-radius: 8px;
   max-width: 90%;
   margin: auto;
+  gap: 60px; /* spacing between image and text */
+}
+
+.skills-resume-div {
+  display: flex;
+  align-items: center; /* vertically center image + text */
+  justify-content: center; /* horizontally center */
+  padding: 40px;
+  background-color: #dfc0ac; /* or your chosen dark background */
+  border-radius: 8px;
+  max-width: 90%;
+  margin: 40px auto 0 auto; /* top margin 40px, auto left/right for centering, 0 bottom */
   gap: 60px; /* spacing between image and text */
 }
 
@@ -27,7 +39,18 @@
   font-family: "Google Sans Regular", sans-serif;
 }
 
-.skills-main-div > * {
+.skills-resume-text-div {
+  flex: 1;
+  color: black;
+  font-family: "Google Sans Regular", sans-serif;
+}
+
+.skills-summary-div > * {
+  flex: 1;
+  margin-bottom: 30px;
+}
+
+.skills-resume-div > * {
   flex: 1;
   margin-bottom: 30px;
 }
@@ -70,10 +93,17 @@
     font-size: 16px;
     line-height: normal;
   }
-  .skills-main-div {
+  .skills-summary-div {
+    flex-direction: column;
+  }
+  .skills-resume-div {
     flex-direction: column;
   }
   .skills-text-div {
+    margin-left: 0px;
+    margin: 20px;
+  }
+  .skills-resume-text-div {
     margin-left: 0px;
     margin: 20px;
   }
