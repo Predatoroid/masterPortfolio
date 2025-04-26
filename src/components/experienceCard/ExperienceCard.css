@@ -75,6 +75,13 @@
   font-family: "Google Sans Regular";
 }
 
+.experience-card-description ul {
+  list-style-position: outside; /* bullets stay aligned inside */
+  padding-left: 1.2em; /* remove left padding */
+  margin-left: 0; /* remove left margin */
+  list-style-type: disc; /* keep normal bullet points */
+}
+
 .experience-card-company > a {
   position: relative;
   color: #000;
