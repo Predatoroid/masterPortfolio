@@ -1,26 +1,39 @@
+/* Root font size */
+html {
+  font-size: 16px;
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+/* Main Containers */
 .main {
-  width: 90%;
+  width: 100%;
   padding: 20px 10px;
-  margin: 0px auto;
+  margin: 0 auto;
   margin-top: 0rem;
 }
+
 .greet-main {
   position: relative;
   padding: 20px 10px;
-  margin: 0px auto;
+  margin: 0 auto;
   background-image: url("../../assets/images/flower-created-from-transparent-material-pastel-background.jpg");
-  background-size: cover; /* Ensures the image fills the width */
-  background-position: center; /* Centers the image */
-  background-repeat: no-repeat; /* Prevents tiling */
-  width: 100%; /* Ensure container takes full width */
-  height: 100vh; /* Adjust as needed */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
   background-blend-mode: darken, luminosity;
 }
 
 .gretting-main {
   width: 90%;
   padding: 20px 10px;
-  margin: 0px auto;
+  margin: 0 auto;
 }
 
 .greeting-main {
@@ -31,39 +44,47 @@
   flex: 1;
   margin-bottom: 30px;
 }
+
+/* Buttons and Divs */
 .button-greeting-div {
   display: flex;
   margin-top: 20px;
+  justify-content: center;
 }
 
+/* Text Styling */
 .greeting-text {
-  font-size: 70px;
+  font-size: clamp(2.5rem, 3vw, 9rem); /* balanced */
   line-height: 1.1;
   margin-bottom: 0px;
   font-family: "Google Sans Medium", sans-serif;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 1);
+  text-align: center;
 }
 
 .greeting-profession-p {
-  font-size: 26px;
+  font-size: clamp(1.5rem, 2vw, 4rem); /* reduced scaling */
   line-height: normal;
   font-family: "Google Sans Medium", sans-serif;
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 1);
+  text-align: center;
 }
 
 .greeting-nickname {
-  font-size: 30px;
-  line-height: 0px;
-  font-family: "Google Sans Bold Italic";
+  font-size: clamp(1.75rem, 2.5vw, 4.5rem); /* reduced scaling */
+  line-height: normal;
+  font-family: "Google Sans Bold Italic", sans-serif;
+  text-align: center;
 }
 
 .greeting-text-p {
-  margin-top: 70px;
-  font-size: 40px;
-  line-height: 40px;
+  font-size: clamp(1.5rem, 2.5vw, 5rem); /* better scaling */
+  margin-top: clamp(1rem, 4vw, 8rem);
+  line-height: 1.2;
   margin-right: 40px;
   font-family: "Google Sans Medium", sans-serif;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 1);
+  text-align: center;
 }
 
 .greeting-image-div > * {
@@ -71,6 +92,7 @@
   height: auto;
 }
 
+/* Image Centering */
 .center {
   display: block;
   margin-left: auto;
@@ -78,8 +100,9 @@
   width: 65%;
 }
 
+/* Quote Section */
 .quote-heading-text {
-  font-size: 36px;
+  font-size: clamp(2rem, 3vw, 4.5rem); /* smoother */
   font-weight: 400;
   font-family: "Google Sans Medium";
   line-height: 1.1;
@@ -88,12 +111,13 @@
 }
 
 .quote-text {
-  font-size: 20px;
+  font-size: clamp(1rem, 2vw, 3rem); /* smoother */
   font-family: "Google Sans Medium";
   line-height: 1.1;
   text-align: center;
 }
 
+/* Positioning */
 .bottom-left {
   position: absolute;
   bottom: 20px;
@@ -110,72 +134,17 @@
   text-align: right;
 }
 
-/* Media Query */
-@media (max-width: 1380px) {
-  .greeting-text {
-    font-size: 50px;
-  }
-  .greeting-profession-p {
-    font-size: 16px;
-    line-height: normal;
-  }
-  .greeting-text-p {
-    margin-top: 0px;
-    font-size: 20px;
-  }
-  .quote-heading-text {
-    font-size: 30px;
-    margin-top: 60px;
-  }
-  .quote-text {
-    font-size: 20px;
-  }
-}
+/* Responsive Adjustments */
 @media (max-width: 768px) {
-  .button-greeting-div {
-    justify-content: space-around;
-  }
-  .greeting-text {
-    font-size: 30px;
-    margin-top: 0px;
-    text-align: center;
-  }
-  .greeting-profession-p {
-    font-size: 26px;
-    line-height: normal;
-    text-align: center;
-  }
-  .greeting-nickname {
-    font-size: 25px;
-    text-align: center;
-  }
-  .greeting-text-p {
-    font-size: 16px;
-    margin-right: 0px;
-    line-height: normal;
-    text-align: center;
-  }
   .greeting-main {
     display: block;
   }
 
-  .portfolio-repo-btn-div {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-  }
-
-  .quote-heading-text {
-    font-size: 25px;
-    margin-top: 0px;
-  }
-  .quote-text {
-    font-size: 15px;
+  .greeting-text-p {
+    margin-right: 0;
   }
 
   .bottom-right {
-    position: absolute;
-    bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
     text-align: center;
