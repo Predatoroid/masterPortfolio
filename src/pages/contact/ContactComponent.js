@@ -14,6 +14,7 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 const ContactData = contactPageData.contactSection;
 const blogSection = contactPageData.blogSection;
 const addressSection = contactPageData.addressSection;
+const emailSection = contactPageData.emailSection;
 const phoneSection = contactPageData.phoneSection;
 const resumeLink = greeting.resumeLink;
 
@@ -63,6 +64,16 @@ class Contact extends Component {
                 >
                   {ContactData["description"]}
                 </p>
+                <a
+                  href="https://www.instadoctor.gr/doctor/stergiopoulou-georgia"
+                  title="Στεργιοπούλου Γεωργία Ψυχολόγος - Ψυχοθεραπευτής"
+                  target="_blank"
+                >
+                  <img
+                    src="https://www.instadoctor.gr/assets/images/banners/Booking-Blue-Banner-Circle.svg"
+                    alt="Κλείσε ραντεβού από το instadoctor.gr"
+                  />
+                </a>
                 <div className="address-heading-text-div">
                   <h1
                     className="address-heading-text"
@@ -75,6 +86,18 @@ class Contact extends Component {
                     style={{ color: theme.secondaryText }}
                   >
                     {addressSection["subtitle"]}
+                  </p>
+                  <h1
+                    className="address-heading-text"
+                    style={{ color: theme.text }}
+                  >
+                    {emailSection["title"]}
+                  </h1>
+                  <p
+                    className="contact-header-detail-text subTitle"
+                    style={{ color: theme.secondaryText }}
+                  >
+                    {emailSection["subtitle"]}
                   </p>
                   <h1
                     className="address-heading-text"
@@ -107,7 +130,7 @@ class Contact extends Component {
             <div className="address-heading-div">
               <div className="contact-heading-img-div">
                 {/* <img
-											src={require(`../../assets/images/${addressSection["avatar_image_path"]}`)}
+											src={require(`../../assets/images/${emailSection["avatar_image_path"]}`)}
 											alt=""
 										/> */}
 
